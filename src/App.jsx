@@ -3,7 +3,7 @@ import axios from "axios";
 
 function App() {
 
-    
+
     const connectHubspot = () => {
         window.open(
             "https://localhost:7265/auth/hubspot/login?state=test-user",
@@ -109,7 +109,7 @@ function App() {
                 <button style={btn("#0070d2")} onClick={connectSalesforce}>Connect Salesforce</button>
             </div>
 
-           
+
             <div style={card}>
                 <h2>Contacts</h2>
 
@@ -149,7 +149,7 @@ function App() {
                 <button style={btn("#333")} onClick={() => pullContacts("salesforce")}>Pull SF</button>
             </div>
 
-          
+
             <div style={card}>
                 <h2>Companies</h2>
 
@@ -186,7 +186,7 @@ function App() {
                 <button style={btn("#333")} onClick={() => pullCompanies("salesforce")}>Pull SF</button>
             </div>
 
-           
+
             <div style={card}>
                 <h2>Deals</h2>
 
@@ -226,7 +226,7 @@ function App() {
                 <button style={btn("#333")} onClick={() => pullDeals("salesforce")}>Pull SF</button>
             </div>
 
-         
+
             <h2>Pulled Results</h2>
 
             {contactsList.length > 0 && (
